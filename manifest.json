@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "ChatWork kick notification",
+    "description": "Tracking ChatWork room kick out",
+    "version": "0.1",
+    "icons": {
+        "32": "assets/img/icon-400.png",
+        "48": "assets/img/icon-400.png"
+    },
+    "browser_action": {
+        "default_icon": "assets/img/icon-400.png",
+        "default_popup": "popup.html",
+        "default_title": "Tracking ChatWork room kick out"
+    },
+    "permissions": [
+        "webRequest",
+        "contextMenus",
+        "tabs",
+        "https://*.chatwork.com/*",
+        "http://*.chatwork.com/*"
+    ],
+    "background": {
+        "scripts": [
+            "assets/js/jquery.min.js",
+            "assets/js/chatwork.js"
+        ]
+    }
+}
